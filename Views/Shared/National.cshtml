@@ -1,0 +1,79 @@
+﻿@using SdpProject.ViewModels
+@model DishesListViewModel
+
+
+
+@{
+    Layout = "~/Views/Layout/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello from view</title>
+    <link rel="stylesheet" href="~/css/dish.css" />
+</head>
+<style>
+
+    body {
+        background: url(~/img/21.png)no-repeat;
+        background-size: 100%;
+        bgcolor: white;
+        filter: alpha(opacity=25) opacity: 0.2;
+    }
+</style>
+<body>
+
+    <div class="dish container">
+        @{
+            foreach (var dish in Model.allDishes)
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 thumb">
+                            <a data-toggle="modal" data-target="#exampleModal">
+                                <img class="img-fluid" src="~/img/besh.jpg" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel">@dish.name</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="img-fluid" src="~/img/besh.jpg" alt="...">
+                                <hr>
+                                <p class="card-text">Ingredients: Horse meat, flour, water, egg, onion, herbs, salt, pepper</p>
+                                <hr>
+                                <p class="card-text">Cuisine: National</p>
+                                <hr>
+                                <p class="card-text">680 g</p>
+                                <hr>
+                                <h3 class="card-text">Price<span class="">@dish.price</span></h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+
+
+</body>
+</html>

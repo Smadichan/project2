@@ -1,0 +1,34 @@
+.form{
+	margin-top:250px;
+	width:450px;
+	height:450px;
+	border-radius:12px;
+	background:rgb(84,84,84,0.8);
+	color:#bdbebd;
+	font-size:22px;
+	
+}
+div.login{
+	padding-top:18%;
+}
+div.login input{
+	height:46px;
+	font-size:20px;
+}
+.form a{
+	font-family:serif;
+	font-size:20px;
+	color:#e9e9e9;
+	margin-left:30px;
+}
+.btn{
+	font-size:20px;
+	width:200px;
+	background:#708090;
+	color:#2c2c2c;
+}
+.btn:hover{
+	font-size:20px;
+	width:200px;
+	background:#687888;
+}

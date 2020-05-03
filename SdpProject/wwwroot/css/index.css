@@ -1,0 +1,140 @@
+html{
+	min-height: 100%;
+}
+body{
+	min-width:100%;
+	position:relative; 
+	padding-bottom: 300px;
+}
+
+.menu{
+	background:rgb(233,233,233,0.1);
+	padding-right:170px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom:50px;
+}
+.menu a{
+	padding-left:40px;
+	font-family:serif;
+	font-size:24px;
+	color:#e9e9e9;
+}
+.menu a:hover{
+	color:#bdbebd;
+}
+.menu .dropdown-menu{
+	font-family:serif;
+	font-size:20px;
+	background:rgb(233,233,233,0.2);
+	color:#e9e9e9;
+}
+.menu .dropdown-menu a:hover{
+	font-family:serif;
+	font-size:24px;
+	background:rgb(84,84,84,0.6);
+	color:#e9e9e9;
+}
+
+.content{	
+	margin-top:170px;
+	margin-bottom:200px;
+	padding-top:18px;
+	padding-bottom:20px;
+	background:rgb(84,84,84,0.8);
+	font-size:24px;
+	color:#d3d3d3;
+}
+.description{
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:200px;
+}
+blockquote {
+	height:350px;
+	margin: 0;
+	background: background:rgb(84,84,84,0.2);
+	color: #d3d3d3;
+	padding: 30px 30px 30px 90px;
+	position: relative;
+	font-family:"Times New Roman", Georgia, Serif;
+	
+}
+blockquote:before {
+	content: "\201C";
+	font-family: serif;
+	position: absolute;
+	top: 20px;
+	left: 16px;
+	color: black;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #bdbebd;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+}
+blockquote:after {
+	content: "";
+	width: 4px;
+	background: #bdbebd;
+	position:absolute;
+	left: 70px;
+	top: 20px;
+	bottom: 20px;
+}
+blockquote p {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.img{
+	height:100%;
+	float:left;
+	margin-right:25px;
+	margin-left:15px;
+}
+.guests{
+	padding-left:15px;
+	padding-right:15px;
+	margin-top:50px;
+	font-size:22px;
+	font-style: oblique;
+	color:#d3d3d3;
+}
+
+
+.footer{
+	width:100%;
+	right:0;
+	left:0;
+	background:rgb(63,63,63,0.5);
+	position: absolute; 
+	padding-bottom:40px;
+}
+.footer iframe{
+	margin-top:40px;
+	margin-left:20px;
+	margin-right:400px;
+}
+footer .data{
+	margin-top:70px;
+	margin-left:400px;
+}
+.data p{
+	color:#d3d3d3;
+	font-size:18px;
+}
+.links{
+	margin-top:20px;
+	margin-left:20px;
+}
+.footer a{
+	font-family:serif;
+	font-size:30px;
+	color:#e9e9e9;
+	padding-left:30px;
+}

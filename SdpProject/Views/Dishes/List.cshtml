@@ -1,0 +1,44 @@
+﻿@using SdpProject.ViewModels
+@model DishesListViewModel
+
+
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name = "viewport" content= "width=device-width" />
+    <title>Menu</title>
+
+</head>
+
+
+
+
+
+<body>
+    <h2>Menu</h2>
+    <h3>@Model.currentCategory</h3>
+    @{ 
+        foreach(var dish in Model.allDishes)
+        {
+            <div>
+                <h2>Dish: @dish.name</h2>
+                <p>Price: @dish.price.ToString("c")</p>
+
+            </div>
+
+        }
+    }
+</body>
+
+
+
+
+
+
+</html>
